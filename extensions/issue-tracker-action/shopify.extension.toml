@@ -1,0 +1,12 @@
+api_version = "2025-01"
+
+[[extensions]]
+name = "t:name"
+handle = "issue-tracker-action"
+type = "ui_extension"
+[[extensions.targeting]]
+module = "./src/ActionExtension-backend.jsx"
+target = "admin.product-details.action.render"
+
+
+
