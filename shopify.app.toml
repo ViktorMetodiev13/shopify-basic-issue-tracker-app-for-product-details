@@ -1,7 +1,7 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
 client_id = "68f12e015b7dc2ad859db28f3d09299b"
-application_url = "https://seem-threaded-vegetables-cooking.trycloudflare.com"
+application_url = "https://fabric-gang-tuition-emission.trycloudflare.com"
 embedded = true
 name = "admin-extensions-demo"
 handle = "admin-extensions-demo"
@@ -23,9 +23,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://seem-threaded-vegetables-cooking.trycloudflare.com/auth/callback",
-  "https://seem-threaded-vegetables-cooking.trycloudflare.com/auth/shopify/callback",
-  "https://seem-threaded-vegetables-cooking.trycloudflare.com/api/auth/callback"
+  "https://fabric-gang-tuition-emission.trycloudflare.com/auth/callback",
+  "https://fabric-gang-tuition-emission.trycloudflare.com/auth/shopify/callback",
+  "https://fabric-gang-tuition-emission.trycloudflare.com/api/auth/callback"
 ]
 
 [pos]
