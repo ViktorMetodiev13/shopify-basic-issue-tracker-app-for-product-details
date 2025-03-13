@@ -49,12 +49,12 @@ function App() {
       setLoadingInfo(false);
       setAllIssues(issues || []);
     });
-
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const getIssueRecommendation = useCallback(async () => {
     setLoadingRecommended(true);
+    console.log("here");
     const res = await fetch(
       `api/recommendedProductIssue?productId=${data.selected[0].id}`,
     );

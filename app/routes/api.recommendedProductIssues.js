@@ -5,15 +5,11 @@ export const loader = async ({ request }) => {
   const { cors } = await authenticate.admin(request);
 
   const productIssues = [
+    { id: "1", title: "Too big", description: "The product was too big." },
+    { id: "2", title: "Too small", description: "The product was too small." },
     {
-      id: "0",
-      title: "Too expensive",
-      description: "The product was too expensive.",
-    },
-    { id: "1", title: "Too sheap", description: "The product was too cheap." },
-    {
-      id: "2",
-      title: "Just Right",
+      id: "3",
+      title: "Just right",
       description:
         "The product was just right, but the customer is still unhappy.",
     },
@@ -26,5 +22,5 @@ export const loader = async ({ request }) => {
 
   const issue = productIssues[idNumber % productIssues.length];
 
-  return cors(json({ productIssues: issue }));
+  return cors(json({ productIssue: issue }));
 };
