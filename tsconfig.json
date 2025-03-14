@@ -3,7 +3,8 @@
     "env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "extensions/issue-tracker-action/src/ActionExtension-backend.jsx"
+    "extensions/issue-tracker-action/src/ActionExtension-backend.jsx",
+    "app/routes/webhooks.app.order-create.jsx"
   ],
   "compilerOptions": {
     "lib": ["DOM", "DOM.Iterable", "ES2022"],

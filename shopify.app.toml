@@ -1,7 +1,7 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
 client_id = "68f12e015b7dc2ad859db28f3d09299b"
-application_url = "https://fabric-gang-tuition-emission.trycloudflare.com"
+application_url = "https://evening-dinner-coating-elements.trycloudflare.com"
 embedded = true
 name = "admin-extensions-demo"
 handle = "admin-extensions-demo"
@@ -17,15 +17,19 @@ api_version = "2025-01"
   topics = [ "app/scopes_update" ]
   uri = "/webhooks/app/scopes_update"
 
+  [[webhooks.subscriptions]]
+  topics = [ "orders/create" ]
+  uri = "/webhooks/app/order-create"
+
 [access_scopes]
 # Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
-scopes = "write_products"
+scopes = "write_products, read_orders"
 
 [auth]
 redirect_urls = [
-  "https://fabric-gang-tuition-emission.trycloudflare.com/auth/callback",
-  "https://fabric-gang-tuition-emission.trycloudflare.com/auth/shopify/callback",
-  "https://fabric-gang-tuition-emission.trycloudflare.com/api/auth/callback"
+  "https://evening-dinner-coating-elements.trycloudflare.com/auth/callback",
+  "https://evening-dinner-coating-elements.trycloudflare.com/auth/shopify/callback",
+  "https://evening-dinner-coating-elements.trycloudflare.com/api/auth/callback"
 ]
 
 [pos]
@@ -34,3 +38,4 @@ embedded = false
 [build]
 dev_store_url = "victor-devv.myshopify.com"
 automatically_update_urls_on_dev = true
+include_config_on_deploy = true
